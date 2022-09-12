@@ -6,9 +6,11 @@
 
 		<title>Stellar Evolution</title>
 
-		<link rel="stylesheet" href="reveal.js/dist/reset.css">
-		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
-		<link rel="stylesheet" href="reveal.js/dist/theme/night.css">
+		<link rel="stylesheet" href="/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="/reveal.js/dist/theme/blood.css">
+		<link rel="stylesheet" href="/build/fontawesome/css/fontawesome.css">
+		<link rel="stylesheet" href="/build/fontawesome/css/solid.css">
 
     <link rel="stylesheet" href="style.css">
 
@@ -27,6 +29,24 @@
         <section>
           <h2>Was ist eigentlich ein Stern?</h2>
         </section>
+
+        <section style="height: 100%;">
+          <div style="display: flex; align-items: center; height: 100%">
+            <div style="width: 50%; height: 100%;">
+              <img class="fill" data-fragment-index="0" data-src="./build/sonnen_aufbau.png" alt="Sonnenaufbau" >
+            </div>
+            <div style="width: 50%;">
+              <h4>Aufbau eines Sterns</h4>
+              <ul>
+                <li>Oberflächentemperatur bestimmt die Farbe</li>
+                <li>Energiegewinn durch Kernfusion</li>
+                <li>Großteil der Lebenszeit Wasserstoff → Helium</li>
+                <li>Je schwerer ein Stern, desto mehr Leistung<br> → heller, heißer, kürzere Lebensdauer</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
 
         <section style="height: 100%;">
           <div style="display: flex; align-items: center; height: 100%">
@@ -50,30 +70,13 @@
           </div>
         </section>
 
-        <section style="height: 100%;">
-          <div style="display: flex; align-items: center; height: 100%">
-            <div style="width: 50%; height: 100%;">
-              <img class="fill" data-fragment-index="0" data-src="./build/sonnen_aufbau.png" alt="Sonnenaufbau" >
-            </div>
-            <div style="width: 50%;">
-              <h4>Aufbau eines Sterns</h4>
-              <ul>
-                <li>Oberflächentemperatur bestimmt die Farbe</li>
-                <li>Energiegewinn durch Kernfusion</li>
-                <li>Großteil der Lebenszeit Wasserstoff → Helium</li>
-                <li>Je schwerer ein Stern, desto mehr Leistung<br> → heller, heißer, kürzere Lebensdauer</li>
-              </ul>
-            </div>
-          </div>
+        <section>
+          <img class="r-stretch" data-src="./build/stars.png">
         </section>
 
         <section style="height: 100%;">
           <h4>Das Hertzsprung-Russel-Diagramm</h4>
           <img class="fill" data-src="./images/hertzsprung_russel.png" alt="Hertzsprung-Russel" >
-        </section>
-
-        <section>
-          <img data-src="./build/stars.png" alt="Hertzsprung-Russel" >
         </section>
 
         <section>
@@ -84,13 +87,27 @@
         </section>
 
         <section>
+          <h4>Die Hauptreihe und ihre Nebenzweige</h4>
+          <img class="r-stretch light-bg" data-src="./build/hauptreihe.png" alt="Hertzsprung-Russel-Tracks" >
+        </section>
+
+        <section>
           <img data-src="./build/stellar_evolution.jpg" alt="Stellar Evolution" >
           <p style="position: absolute; bottom: 10pt; left: 50pt;">©ESA</p>
         </section>
 
+
         <section>
-          <h4>Die Hauptreihe</h4>
+          <h4>Kräfte in einem Stern</i></h4>
+          <ul style="list-style: none;">
+            <li><i class="fa-solid fa-minimize"></i> Gravitation</li>
+            <li><i class="fa-solid fa-maximize"></i> Strahlungsdruck</li>
+            <li><i class="fa-solid fa-maximize"></i> Elektronen-Entartung</li>
+            <li><i class="fa-solid fa-maximize"></i> Neutronen-Entartung</li>
+            <li><i class="fa-solid fa-maximize"></i> Quark-Entartung?</li>
+          </ul>
         </section>
+
 
         <section>
           <h4>Überriesen</h4>
@@ -129,7 +146,54 @@
             </div>
           </div>
         </section>
+
+        <section>
+          <h4>Neutronensterne und Pulsare</h4>
+        </section>
+
+        <section>
+          <h4>Schwarze Löcher</h4>
+        </section>
+
+        <section>
+          <h2>Sternentstehung</h2>
+        </section>
+
+        <section>
+          <h4>Sternentstehungs-Gebiete</h4>
+        </section>
+
+        <section>
+          <h4>Protostern in Gas-Schicht (ALMA)</h4>
+          <img class="r-stretch" data-src="./build/alma_planetary_disk.jpg">
+        </section>
+
+        <section>
+          <h4>JWST Kernfragen</h4>
+          <ul>
+            <li>Wie kollabieren Stern- und Staubwolken um Sterne zu bilden?</li>
+            <li>Warum entstehen die meisten Sterne in Gruppen?</li>
+            <li>Wie genau entstehen Planetensysteme?</li>
+            <li>Wie entwickeln sich Sterne und wie gelangen schwere Elemente in den freien Raum?</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Wie möchte JWST diese Fragen beantworten?</h4> 
+          <img class="r-stretch" data-src="./build/carina_visible_ir.jpg">
+        </section>
+        
+        <section zoomLevel="5">
+          <div class="r-stack">
+            <img class="fragment fade-out" data-fragment-index="1" data-src="./build/hubble_carina.jpg">
+            <img class="fragment current-visible" data-fragment-index="1" data-src="./build/jwst_carina.jpg">
+          </div>
+        </section>
+
+
+
 			</div>
+
 		</div>
 
 		<script src="reveal.js/dist/reveal.js"></script>

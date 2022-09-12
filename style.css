@@ -15,3 +15,9 @@ section {
   border-radius: 50pt;
   padding: 20pt;
 }
+
+.light-bg {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50pt;
+  padding: 20pt;
+}

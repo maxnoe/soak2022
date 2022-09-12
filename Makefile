@@ -4,6 +4,9 @@ all: images
 images: build/gaias_sky_in_color.jpg build/hertzsprung_russel.png build/crab.jpg
 images: build/stars.png build/core_collapse.png build/sonnen_aufbau.png
 images: build/sonne.jpg build/gaia_sun_evolution.mp4 build/stellar_evolution.jpg
+images: build/hauptreihe.png build/alma_planetary_disk.jpg build/carina_visible_ir.jpg
+images: build/jwst_carina.jpg build/hubble_carina.jpg
+
 
 
 dl=curl -sSfL -o $@
@@ -32,17 +35,41 @@ build/stellar_evolution.jpg: | build
 build/sonnen_aufbau.png: | build
 	${dl} https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Solar_internal_structure-de.svg/1024px-Solar_internal_structure-de.svg.png
 
+build/hauptreihe.png: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/e/ef/Zams_and_tracks.png
+
+
 build/%.jpg: build/%.png
 	convert $< $@
 
 build/crab.jpg: | build
 	${dl} https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/2048px-Crab_Nebula.jpg
 
+build/alma_planetary_disk.jpg: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/HL_Tau_protoplanetary_disk.jpg/1024px-HL_Tau_protoplanetary_disk.jpg
+
+build/carina_visible_ir.jpg: | build
+	${dl} https://cdn.spacetelescope.org/archives/images/large/heic1007b.jpg
+
+build/jwst_carina.png: | build
+	${dl} https://stsci-opo.org/STScI-01GA6KKWG229B16K4Q38CH3BXS.png
+
+build/hubble_carina.jpg: | build
+	${dl} https://cdn.spacetelescope.org/archives/images/large/opo0834a.jpg
+
 build:
 	mkdir -p build
 
 clean:
 	rm -rf build
+
+build/fontawesome/css/all.css: | build
+	rm -rf build/fontawesome
+	curl -sSfL -o build/fontawesome.zip https://use.fontawesome.com/releases/v6.2.0/fontawesome-free-6.2.0-web.zip
+	unzip build/fontawesome.zip -d build
+	mv build/fontawesome-* build/fontawesome
+	rm -f build/fontawesome.zip
+
 
 
 .PHONY: images

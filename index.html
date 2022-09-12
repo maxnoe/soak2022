@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Stellar Evolution</title>
+
+		<link rel="stylesheet" href="reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="reveal.js/dist/theme/night.css">
+
+    <link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/LaPalma2022_MilkyWay_stacked.jpg">
+          <div class="dark-bg">
+            <h2>Stellare Evolution</h2>
+            <h3>Maximilian Linhoff</h3>
+            <h4>PeP et al. Sommerakademie 2022</h4>
+          </div>
+        </section>
+
+        <section>
+          <h2>Was ist eigentlich ein Stern?</h2>
+        </section>
+
+        <section style="height: 100%;">
+          <div style="display: flex; align-items: center; height: 100%">
+            <div style="width: 50%; height: 100%;">
+              <img class="fill" data-src="./build/sonne.jpg" alt="Sonne" >
+              <span style="position: absolute; left: 25pt; top: 60pt;" >
+                Die Sonne im Infrarot
+              </span>
+            </div>
+            <div style="width: 50%;">
+              <h4>Unsere Sonne</h4>
+              <table>
+                <tr><td>Oberflächentemperatur</td><td>5500 °C</td></tr>
+                <tr><td>Kerntemperatur</td><td>15.6 Millionen °C</td></tr>
+                <tr><td>Radius</td><td>696&thinsp;342 km</td></tr>
+                <tr><td>Leuchtkraft</td><td>\(3{,}8 \cdot 10^{26}\) W</td></tr>
+                <tr><td>Masse</td><td>\(2 \cdot 10^{30}\) kg</td></tr>
+                <tr><td>Alter</td><td>ca. 4,5 Mrd. Jahre</td></tr>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section style="height: 100%;">
+          <div style="display: flex; align-items: center; height: 100%">
+            <div style="width: 50%; height: 100%;">
+              <img class="fill" data-fragment-index="0" data-src="./build/sonnen_aufbau.png" alt="Sonnenaufbau" >
+            </div>
+            <div style="width: 50%;">
+              <h4>Aufbau eines Sterns</h4>
+              <ul>
+                <li>Oberflächentemperatur bestimmt die Farbe</li>
+                <li>Energiegewinn durch Kernfusion</li>
+                <li>Großteil der Lebenszeit Wasserstoff → Helium</li>
+                <li>Je schwerer ein Stern, desto mehr Leistung<br> → heller, heißer, kürzere Lebensdauer</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section style="height: 100%;">
+          <h4>Das Hertzsprung-Russel-Diagramm</h4>
+          <img class="fill" data-src="./images/hertzsprung_russel.png" alt="Hertzsprung-Russel" >
+        </section>
+
+        <section>
+          <img data-src="./build/stars.png" alt="Hertzsprung-Russel" >
+        </section>
+
+        <section>
+          <h4>Der Pfad der Sonne durchs Hertzsprung-Russel-Diagramm</h4>
+          <video controls>
+            <source data-src="./build/gaia_sun_evolution.mp4" type="video/mp4" >
+          </video>
+        </section>
+
+        <section>
+          <img data-src="./build/stellar_evolution.jpg" alt="Stellar Evolution" >
+          <p style="position: absolute; bottom: 10pt; left: 50pt;">©ESA</p>
+        </section>
+
+        <section>
+          <h4>Die Hauptreihe</h4>
+        </section>
+
+        <section>
+          <h4>Überriesen</h4>
+        </section>
+
+        <section>
+          <h4>Weiße Zwerge</h4>
+        </section>
+
+        <section>
+          <h4>Braune Zwerge</h4>
+        </section>
+
+        <section style="height: 100%;">
+          <div style="display: flex; align-items: center; height: 100%">
+            <div style="width: 60%; height: 100%;">
+              <div class="r-stack">
+                <img class="fill" data-src="./build/core_collapse.png" alt="Kernkollaps" >
+                <div class="fragment" data-fragment-index="1" style="height: 100%;">
+                  <img class="fill" data-src="./build/crab.jpg" alt="Krebsnebel" >
+                  <span style="position: absolute; left: 25pt; bottom: 25pt;" >
+                    Krebsnebel, SN 1054, Hubble Telescope
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div style="width: 40%;">
+              <h4>Supernovae</h4>
+              <ul>
+                <li>Strahlungsdruck ↔ Gravitation</li>
+                <li>Eisen ist das schwerste Element dessen Fusion Energie liefert</li>
+                <li>Nach der Eisenfusion kollabiert der Stern</li>
+                <li>Gewaltige Explosion wenn kollabierende Materie auf Eisenkern trifft</li>
+                <li>Erzeugt schwerere Elemente und schleudert sie in die Umgebung</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+			</div>
+		</div>
+
+		<script src="reveal.js/dist/reveal.js"></script>
+		<script src="reveal.js/plugin/notes/notes.js"></script>
+		<script src="reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="reveal.js/plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+        width: 1920,
+        height: 1080,
+				hash: true,
+        controls: false,
+        progress: false,
+        slideNumber: true,
+        showNotes: true,
+        zoomLevel: 2,
+        plugins: [ RevealMarkdown, RevealNotes, RevealZoom, RevealMath.KaTeX],
+			});
+
+      Reveal.on( 'slidechanged', event => {
+        let zoomlevel = event.currentSlide.attributes.zoomlevel;
+        if (zoomlevel !== undefined) {
+          Reveal.configure({zoomLevel: zoomlevel.nodeValue});
+        } else {
+          Reveal.configure({zoomLevel: 2});
+        }
+      });
+
+		</script>
+	</body>
+</html>

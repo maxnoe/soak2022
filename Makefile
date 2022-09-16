@@ -5,7 +5,10 @@ images: build/gaias_sky_in_color.jpg build/hertzsprung_russel.png build/crab.jpg
 images: build/stars.png build/core_collapse.png build/sonnen_aufbau.png
 images: build/sonne.jpg build/gaia_sun_evolution.mp4 build/stellar_evolution.jpg
 images: build/hauptreihe.png build/alma_planetary_disk.jpg build/carina_visible_ir.jpg
-images: build/jwst_carina.jpg build/hubble_carina.jpg
+images: build/jwst_carina.jpg build/hubble_carina.jpg build/fontawesome/css/all.css
+images: build/pp_fusion.svg build/cno_fusion.svg build/fusion_processes.svg
+images: build/orion_nebula.jpg build/pleiades.jpg build/m13.jpg build/borexino.jpg
+images: build/vela_pulsar.ogv build/sgr_a_star.jpg
 
 
 
@@ -13,6 +16,33 @@ dl=curl -sSfL -o $@
 
 build/gaias_sky_in_color.png: | build
 	${dl} 'https://cdn.sci.esa.int/documents/33580/35361/1567215029635-ESA_Gaia_DR2_AllSky_Brightness_Colour_8000x4000_transparent.png/cc5012fa-0050-840e-ad5d-f987f0182b18?version=1.0&t=1567215056928'
+
+build/sgr_a_star.jpg: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/EHT_Saggitarius_A_black_hole.tif/lossy-page1-1024px-EHT_Saggitarius_A_black_hole.tif.jpg
+
+build/borexino.jpg: | build
+	${dl} https://scitechdaily.com/images/Borexino-Detector.jpg
+
+build/vela_pulsar.ogv: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/7/7d/Vela_Pulsar_jet_seen_by_Chandra_Observatory.ogv
+
+build/m13.jpg: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/6/69/Messier_13.jpg
+
+build/orion_nebula.jpg: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/1024px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg
+
+build/pp_fusion.svg: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/8/85/Fusion_in_the_Sun.svg
+
+build/cno_fusion.svg: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/2/21/CNO_Cycle.svg
+
+build/pleiades.jpg: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/1280px-Pleiades_large.jpg
+
+build/fusion_processes.svg: | build
+	${dl} https://upload.wikimedia.org/wikipedia/commons/5/5b/Nuclear_energy_generation.svg
 
 build/hertzsprung_russel.png: | build
 	${dl} https://scienceblogs.de/astrodicticum-simplex/files/2012/06/17882-HRD04.png

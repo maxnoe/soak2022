@@ -38,10 +38,10 @@
             <div style="width: 50%;">
               <h4>Aufbau eines Sterns</h4>
               <ul>
-                <li>Oberflächentemperatur bestimmt die Farbe</li>
                 <li>Energiegewinn durch Kernfusion</li>
-                <li>Großteil der Lebenszeit Wasserstoff → Helium</li>
+                <li>Oberflächentemperatur → Farbe (Planck)</li>
                 <li>Je schwerer ein Stern, desto mehr Leistung<br> → heller, heißer, kürzere Lebensdauer</li>
+                <li>Großteil der Lebenszeit Wasserstoff → Helium</li>
               </ul>
             </div>
           </div>
@@ -79,9 +79,53 @@
           <img class="fill" data-src="./images/hertzsprung_russel.png" alt="Hertzsprung-Russel" >
         </section>
 
+        <section style="height: 100%;">
+          <div style="display: flex; align-items: center; height: 100%">
+            <div style="width: 40%; height: 100%;" class="light-bg">
+              <img class="fill" data-src="build/pp_fusion.svg" class="r-stretch"/>
+            </div>
+            <div style="width: 60%;">
+              <ul>
+                <li>Vorherrschender Prozess bei „niedrigen“ Temperaturen
+                  <br> → Auch in der Sonne
+                </li>
+                <li>Erzeugt Neutrinos bis ≈ 0,4 MeV</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section data-background="./build/borexino.jpg">
+          <div class="darker-bg">
+            <h4>Die PeP-Reaktion</h4>
+            <div class="fragment">
+              <p>\[
+              \mathrm{p} + \mathrm{e}^- + \mathrm{p} \to {}^2_1 \mathrm{H} + \mathrm{\nu}_{\mathrm{e}}
+              \]</p>
+
+              <p>In der Sonne: 400x seltener als pp</p>
+              <p>Aber: „hochenergetische“ Neutrinos (1,42 MeV)</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h4>Bethe-Weizsäcker-Zyklus</h4>
+          <img class="r-stretch light-bg" data-src="./build/cno_fusion.svg">
+        </section>
+
+        <section>
+          <h4>Prozessraten</h4>
+          <img class="r-stretch light-bg" data-src="./build/fusion_processes.svg">
+        </section>
+
+        <section>
+          <h2>Stellare Evolution</h2>
+        </section>
+
         <section>
           <h4>Der Pfad der Sonne durchs Hertzsprung-Russel-Diagramm</h4>
-          <video controls>
+          <video controls class="r-stretch">
             <source data-src="./build/gaia_sun_evolution.mp4" type="video/mp4" >
           </video>
         </section>
@@ -96,7 +140,6 @@
           <p style="position: absolute; bottom: 10pt; left: 50pt;">©ESA</p>
         </section>
 
-
         <section>
           <h4>Kräfte in einem Stern</i></h4>
           <ul style="list-style: none;">
@@ -106,19 +149,6 @@
             <li><i class="fa-solid fa-maximize"></i> Neutronen-Entartung</li>
             <li><i class="fa-solid fa-maximize"></i> Quark-Entartung?</li>
           </ul>
-        </section>
-
-
-        <section>
-          <h4>Überriesen</h4>
-        </section>
-
-        <section>
-          <h4>Weiße Zwerge</h4>
-        </section>
-
-        <section>
-          <h4>Braune Zwerge</h4>
         </section>
 
         <section style="height: 100%;">
@@ -137,7 +167,6 @@
             <div style="width: 40%;">
               <h4>Supernovae</h4>
               <ul>
-                <li>Strahlungsdruck ↔ Gravitation</li>
                 <li>Eisen ist das schwerste Element dessen Fusion Energie liefert</li>
                 <li>Nach der Eisenfusion kollabiert der Stern</li>
                 <li>Gewaltige Explosion wenn kollabierende Materie auf Eisenkern trifft</li>
@@ -147,20 +176,61 @@
           </div>
         </section>
 
-        <section>
-          <h4>Neutronensterne und Pulsare</h4>
+        <section style="height: 100%;">
+          <div style="display: flex; align-items: center; height: 100%">
+            <div style="width: 60%; height: 100%;">
+              <img class="fill" data-src="./images/pulsar.webp" alt="Pulsar" >
+            </div>
+            <div style="width: 40%;">
+              <h4>Neutronensterne und Pulsare</h4>
+              <ul>
+                <li>Maximale Masse für W. Zwerge:<br>Chandrasekhar Limit: \( \approx 1.4 m_{☉} \)</li>
+                <li>\(p + e \to n\)</li>
+                <li>1 Atomkern mit ≈20 km ø</li>
+                <li>Drehimpulserhaltung!</li>
+                <li>Magnetfeld bis 10<sup>11</sup> T</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section style="height: 100%;">
+          <h4>Vela Pulsar in Röntgenstrahlung (CHANDRA)</h4>
+          <video controls class="r-stretch" >
+            <source data-src="./build/vela_pulsar.ogv" type="video/ogg" >
+          </video>
         </section>
 
         <section>
           <h4>Schwarze Löcher</h4>
+          <div style="display: flex; align-items: center; height: 100%">
+            <div style="width: 50%; height: 100%;">
+              <img class="fill" data-src="./build/sgr_a_star.jpg" alt="Saggitarius A*" >
+            </div>
+            <div style="width: 50%;">
+              <h4>Neutronensterne und Pulsare</h4>
+              <ul>
+                <li>Maximale Masse für Neutronensterne:
+                  <br>Tolman-Openheimer-Volkoff Limit:
+                  <br> \( m_{\mathrm{TOV}} \approx 2.3 m_{☉} \)</li>
+                <li>QCD für Quarkplasma nicht gelöst <br> → Existenz von Quarksternen unklar</li>
+                <li>Kollaps zum schwarzen Loch ab welcher Masse?</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section>
           <h2>Sternentstehung</h2>
         </section>
 
-        <section>
+        <section style="height: 100%;">
           <h4>Sternentstehungs-Gebiete</h4>
+          <div class="r-stack" style="height: 100%;">
+            <img class="fill fragment fade-out" data-fragment-index="1" data-src="./build/orion_nebula.jpg">
+            <img class="fill fragment current-visible" data-fragment-index="1" data-src="./build/pleiades.jpg">
+            <img class="fill fragment" data-src="./build/m13.jpg">
+          </div>
         </section>
 
         <section>
@@ -179,10 +249,10 @@
         </section>
 
         <section>
-          <h4>Wie möchte JWST diese Fragen beantworten?</h4> 
+          <h4>Wie möchte JWST diese Fragen beantworten?</h4>
           <img class="r-stretch" data-src="./build/carina_visible_ir.jpg">
         </section>
-        
+
         <section zoomLevel="5">
           <div class="r-stack">
             <img class="fragment fade-out" data-fragment-index="1" data-src="./build/hubble_carina.jpg">
@@ -190,8 +260,12 @@
           </div>
         </section>
 
-
-
+        <section>
+          <h4>Up next: Lava</h4>
+          <video controls class="r-stretch" autoplay>
+            <source data-src="./volcano.mp4" type="video/mp4" >
+          </video>
+        </section>
 			</div>
 
 		</div>
